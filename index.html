@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synapse Net - Rede de Computadores</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="tema-estilo" rel="stylesheet" href="tema-branco.css">
+</head>
+<body>
+
+    <style>
+        /* Botões de acessibilidade */
+        .botoes-acessibilidade {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        .botoes-acessibilidade button {
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .botoes-acessibilidade button:hover {
+            opacity: 0.8;
+        }
+    </style>
+    <!-- Menu de navegação -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="relatorio.php">Relatório</a></li>
+        </ul>
+    </nav>
+
+    <!-- Botões de acessibilidade -->
+    <div class="botoes-acessibilidade">
+        <button onclick="mudarTema('tema-branco.css')" style="background: #fff; color: #000;">Modo Claro</button>
+        <button onclick="mudarTema('tema-escuro.css')" style="background: #222; color: #fff;">Modo Escuro</button>
+        <button onclick="mudarTema('tema-leitura.css')" style="background: #ffeb3b; color: #000;">Modo Leitura</button>
+    </div>
+
+    <header>
+        <h1 class="titulo-galeria">Rede de Computadores</h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="conteudo">
+                <div class="titulo-galeria"><h3>O que é uma rede de computadores?</h3></div>
+                <p>Uma rede de computadores é um conjunto de dispositivos (computadores, celulares, impressoras etc.) conectados entre si para compartilhar informações e recursos, como arquivos, internet e impressoras.</p>
+                <img src="./imagem/img1.jfif" alt="Conceito de rede de computadores" style="max-width: 100%;">
+                
+                <h3>Exemplo avançado</h3>
+                <p>Em uma infraestrutura corporativa de alta disponibilidade, redes SD-WAN (SoftwareDefined Wide Area Network) são implementadas para otimizar o tráfego entre múltiplos 
+                    data centers e filiais. A comunicação entre segmentos da rede é gerenciada por 
+                    políticas de QoS (Quality of Service) que priorizam aplicações críticas. O roteamento 
+                    dinâmico BGP (Border Gateway Protocol) é usado para redundância, enquanto o MPLS 
+                    (Multiprotocol Label Switching) garante baixa latência em conexões privadas.</p>
+                <img src="./imagem/img4.jfif" alt="Exemplo avançado de rede" style="max-width: 100%;">
+
+                <h3>Exemplo intermediário</h3>
+                <p>Uma empresa utiliza VLANs (Virtual Local Area Networks) para segmentar sua rede 
+                    interna, separando tráfego de departamentos distintos, como RH e TI. O firewall 
+                    configurado com regras de ACL (Access Control List) restringe acessos entre segmentos. Para otimizar a segurança, a autenticação 802.1X garante que apenas 
+                    dispositivos autorizados acessem a rede corporativa.</p>
+                <img src="./imagem/img5.jfif" alt="Exemplo intermediário de rede" style="max-width: 100%;">
+
+                <h3>Exemplo básico</h3>
+                <p>Em casa, quando você acessa a internet no seu celular, ele se conecta ao roteador WiFi, que recebe e envia dados da internet para o seu dispositivo. O roteador funciona 
+                    como um “correio”, enviando informações para o lugar certo, garantindo que seu 
+                    celular consiga abrir vídeos, redes sociais e sites.</p>
+                <img src="./imagem/img6.jfif" alt="Exemplo básico de rede" style="max-width: 100%;">
+            </div>
+        </section>
+    </main>
+
+    <div class="conteudo">
+        <div class="titulo-galeria"><h3>Evolução Histórica</h3></div>
+        <p><b>Anos 1960 - O Início: ARPANET</b></p>
+        <p>O Departamento de Defesa dos EUA criou a ARPANET para conectar centros de pesquisa. Foi a primeira
+            rede a usar comutação de pacotes, que divide dados em partes menores para envio eficiente. Essa
+            tecnologia foi a base do que se tornaria a Internet.</p>
+
+        <p><b>Anos 1970 - Criação de Protocolos</b></p>
+        <p>Surgiram os primeiros protocolos de rede, especialmente o TCP/IP, criado em 1974. Esses protocolos
+            permitem que diferentes sistemas se comuniquem. O e-mail também surgiu nessa época, revolucionando a
+            comunicação digital.</p>
+
+        <p><b>Anos 1980 - Redes Locais (LAN) e Expansão</b></p>
+        <p>Com a popularização das redes locais (LANs), empresas e escolas começaram a conectar seus
+            computadores internamente. O padrão Ethernet e o uso de cabos coaxiais marcaram essa fase, tornando as
+            redes mais acessíveis fora do meio acadêmico.</p>
+
+        <p><b>Anos 1990 - A Internet Comercial e a Web</b></p>
+        <p>A criação da World Wide Web (WWW) e dos navegadores, como o Netscape, transformou a Internet em
+            algo visual e acessível. A Internet se expandiu para o público geral, com acesso por linha telefônica e depois
+            por banda larga.</p>
+
+        <p><b>Anos 2000 - Redes sem Fio e Mobilidade</b></p>
+        <p>Com a chegada do Wi-Fi, notebooks e celulares começaram a se conectar sem fios. A internet móvel, com
+            redes 3G e 4G, trouxe acesso em qualquer lugar. As redes sociais e os serviços de streaming também se
+            tornaram populares.</p>
+
+            <p><b>Anos 2010 até Hoje - Conectividade Total</b></p>
+            <p>O uso de tecnologias como 5G, fibra ótica, computação em nuvem e Internet das Coisas (IoT) conectou
+                praticamente tudo. Hoje, a internet é essencial para trabalho, estudo, entretenimento e vida social.</p>
+            <br>
+            <p>As redes de computadores evoluíram de simples conexões militares para uma infraestrutura global que
+                conecta bilhões de dispositivos. A inovação continua, impulsionando novas formas de viver e trabalhar.</p>
+        <img src="./imagem/img2.jfif" alt="Evolução das redes" style="max-width: 100%;">
+    </div>
+
+    <div class="conteudo">
+        <div class="titulo-galeria"><h3>Tipos de redes</h3></div>
+        <h2>Classificação por abrangência</h2>
+        <p><b>LAN</b> (Local Area Network): Redes locais usadas em residências, escritórios ou pequenos ambientes</p>
+        <p><b>MAN</b> (Metropolitan Area Network): Abrange áreas maiores, como cidades ou campus universitários.</p>
+        <p><b>WAN</b> (Wide Area Network): Redes de grande escala, cobrindo cidades, países ou até o mundo.</p>
+
+        <h3>Exemplo avançado</h3>
+        <p>Empresas globais utilizam redes WAN híbridas que combinam conexões privadas (como MPLS) com VPNs IPsec para garantir segurança e eficiência. A tecnologia SDN (Software-Defined Networking) oferece controle centralizado, permitindo balanceamento de carga e failover em caso de falhas.</p>
+        <img src="./imagem/img10.jfif" alt="WAN híbrida e SDN" style="max-width: 100%;">
+        <h3>Exemplo intermediário</h3>
+        <p>Universidades com redes MAN conectam prédios usando fibra óptica, otimizando o tráfego por switches avançados.</p>
+        <img src="./imagem/img7.jfif" alt="Exemplo de rede MAN" style="max-width: 100%;">
+        <h3>Exemplo básico</h3>
+        <p>O Wi-Fi de uma escola é uma LAN; se várias escolas na mesma cidade estiverem conectadas, formam uma MAN, e a internet é um exemplo de WAN.</p>
+        <img src="./imagem/img8.jfif" alt="Exemplo de LAN em escola" style="max-width: 100%;">
+
+        <div class="titulo-galeria"><h3>Classificação por topologia</h3></div>
+        <p>A topologia de uma rede define a forma como os dispositivos estão conectados. Aqui estão as principais: 
+        </p>
+        <ul>
+            <li><b>Estrela</b> - Todos os dispositivos se conectam a um ponto central (como um
+                roteador Wi-Fi).</li>
+            <li><b>Anel</b> - Os dispositivos se conectam em um círculo fechado.
+            </li>
+            <li><b>Barramento</b> - Todos os dispositivos podem se conectar diretamente uns aos outros.</li>
+            <li><b>Malha</b> - Todos os dispositivos podem se conectar diretamente uns aos outros.</li>
+        </ul>
+        <img src="./imagem/img9.jfif" alt="Topologias de rede" style="max-width: 100%;">
+        <h3>Exemplo avançado</h3>
+        <p>Grandes data centers utilizam a topologia malha híbrida, onde múltiplos links
+            redundantes garantem alta disponibilidade. Essa configuração permite failover
+            automático e otimização de tráfego via protocolos como OSPF (Open Shortest Path
+            First) e STP (Spanning Tree Protocol).</p>
+        <h3>Exemplo intermediário</h3>
+        <p>Um provedor de internet pode usar uma topologia em malha para garantir conexões
+            redundantes entre servidores, evitando pontos únicos de falha. Em uma fábrica, uma
+            topologia barramento pode conectar sensores e máquinas na linha de produção.</p>
+        <h3>Exemplo básico</h3>
+        <p>Se você tem um roteador Wi-Fi em casa e todos os aparelhos se conectam a ele, isso
+            é uma topologia estrela. Se os computadores estiverem ligados uns aos outros sem
+            precisar de um roteador central, isso é topologia anel.
+            </p>
+    </div>
+
+    <div class="conteudo">
+        <div class="titulo-galeria"><h3>Principais protocolos de rede
+        </h3></div>
+        <ul>
+            <li> <b>IP (Internet Protocol)</b> -  Endereça os dispositivos na rede (como números de 
+                telefone para os computadores).
+                </li>
+            <li><b>TCP (Transmission Control Protocol)</b> - Garante que os dados cheguem 
+                corretamente.</li>
+            <li><b>UDP (User Datagram Protocol) </b> - Mais rápido que o TCP, mas sem garantia de 
+                entrega (usado em chamadas de vídeo)</li>
+            <li><b>HTTP/HTTPS</b> - Usado para acessar sites na internet.</li>
+            <li><b>FTP (File Transfer Protocol)</b> - Usado para transferência de arquivos.</li>
+
+            <h3>Exemplo avançado</h3>
+            <p>Uma aplicação distribuída baseada em microserviços pode utilizar gRPC sobre HTTP/2
+                para comunicação eficiente entre serviços. Além disso, pode empregar MQTT para 
+                dispositivos IoT e QUIC para otimizar conexões web de baixa latência.
+                </p>
+            <h3>Exemplo intermediário</h3>
+            <p>Servidores web utilizam HTTP/HTTPS para entregar páginas da web, enquanto o 
+                protocolo DNS converte nomes de domínio (ex: google.com) em endereços IP. 
+                Aplicações em tempo real, como chamadas VoIP, usam UDP para priorizar velocidade 
+                sobre confiabilidade</p>
+            <h3>Exemplo básico</h3>
+            <p>Quando você acessa um site, o navegador usa HTTP para buscar a página. Se for um 
+                site seguro, será HTTPS. Quando você assiste a um vídeo no YouTube, ele usa UDP
+                para carregar mais rápido sem travar.</p>
+        </ul>
+
+
+        <img src="./imagem/img3.jfif" alt="Protocolos em ação" style="max-width: 100%;">
+    </div>
+
+    <!-- Script de mudança de tema -->
+    <script>
+        function mudarTema(tema) {
+            document.getElementById("tema-estilo").href = tema;
+            localStorage.setItem("tema-selecionado", tema);
+        }
+
+        window.onload = function() {
+            const temaSalvo = localStorage.getItem("tema-selecionado");
+            if (temaSalvo) {
+                document.getElementById("tema-estilo").href = temaSalvo;
+            }
+        };
+    </script>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script> new window.VLibras.Widget('https://vlibras.gov.br/app'); </script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="shortcut icon" href="./imagem/log.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link id="tema-estilo" rel="stylesheet" href="tema-branco.css">
+    <style>
+        /* Botões de acessibilidade */
+        .botoes-acessibilidade {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        .botoes-acessibilidade button {
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        .botoes-acessibilidade button:hover {
+            opacity: 0.8;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="relatorio.php">Relatório</a></li>
+            </ul>
+        </ul>
+    </nav>
+
+    <div class="botoes-acessibilidade">
+        <button onclick="mudarTema('tema-branco.css')" style="background: #fff; color: #000;">Modo Claro</button>
+        <button onclick="mudarTema('tema-escuro.css')" style="background: #222; color: #fff;">Modo Escuro</button>
+        <button onclick="mudarTema('tema-leitura.css')" style="background: #ffeb3b; color: #000;">Modo Leitura</button>
+    </div>
+
+    <main class="content animate__animated animate__fadeIn">
+        <section>
+            <center><h2>Entre em Contato</h2></center>
+            <form id="contact-form" method="post" action="inserir.php">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required>
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione</option>
+                    <option value="">Selecione seu estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <!-- Adiciona estados -->
+                </select>
+
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+                <label for="escolaridade">Grau de Escolaridade:</label>
+                <select id="escolaridade" name="escolaridade" required>
+                    <option value="">Selecione</option>
+                    <option value="fundamental">Ensino Fundamental</option>
+                    <option value="medio">Ensino Médio</option>
+                    <option value="superior">Ensino Superior</option>
+                </select>
+
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" placeholder="Deixe seu comentário (máx. 500 caracteres)" maxlength="500" required></textarea>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+            <div id="loading" style="display: none;">Enviando...</div>
+        </section>
+        <br>
+        <br>
+        <section>
+            <h2 class="titulo-galeria">Localização IFSP Hortolândia</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.6905175085335!2d-47.23373852469129!3d-22.850936779294447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bc16c66f0bed%3A0x1aee5c111efc6196!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%2C%20Campus%20Hortol%C3%A2ndia!5e0!3m2!1spt-PT!2sbr!4v1743809254226!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Av. Thereza Ana Cecon Breda, 1896 - Vila Sao Pedro, Hortolândia - SP, 13183-091</p>
+        </section>
+    </main>
+
+    <script>
+        function mudarTema(tema) {
+            document.getElementById("tema-estilo").href = tema;
+            localStorage.setItem("tema-selecionado", tema);
+        }
+
+        // Manter o tema escolhido após recarregar a página
+        window.onload = function() {
+            const temaSalvo = localStorage.getItem("tema-selecionado");
+            if (temaSalvo) {
+                document.getElementById("tema-estilo").href = temaSalvo;
+            }
+        };
+    </script>
+
+<script src="https://unpkg.com/imask"></script>
+<script>
+    // Aplicar máscara no campo de telefone
+    const telefoneInput = document.getElementById('telefone');
+    const telefoneMask = IMask(telefoneInput, {
+        mask: '(00) 0 0000-0000'
+    });
+</script>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  
+</body>
+</html>

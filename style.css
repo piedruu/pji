@@ -1,0 +1,228 @@
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  padding-top: 50px; /* Evita que o menu esconda o topo do conteúdo */
+  padding-bottom: 50px; /* Espaço inferior extra */
+}
+
+.conteudo img {
+  max-width: 100%;
+  max-height: 400px; /* Limita a altura máxima */
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  object-fit: contain; /* Garante que a imagem não distorça */
+}
+
+.conteudo img:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s;
+}
+
+/* Bloco flexível */
+.bloco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.imagem-esquerda {
+  flex-direction: row;
+}
+
+.imagem-direita {
+  flex-direction: row-reverse;
+}
+
+/* Textos */
+.texto {
+  max-width: 400px;
+  text-align: justify;
+}
+
+.conteudo {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 2.0;
+  font-size: 20px;
+}
+
+/* Títulos */
+.titulo-galeria,
+.titulo-decorado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.titulo-galeria::before,
+.titulo-galeria::after,
+.titulo-decorado::before,
+.titulo-decorado::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: black;
+  margin: 10px;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Menu */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.menu ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Formulário de Contato */
+#contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: white;
+}
+
+#contact-form label {
+  flex: 1 1 100%;
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+  flex: 1 1 48%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#contact-form textarea {
+  flex: 1 1 100%;
+  resize: vertical;
+  min-height: 100px;
+}
+
+#contact-form button {
+  flex: 1 1 48%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+  background-color: #45a049;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  #contact-form input,
+  #contact-form select,
+  #contact-form textarea,
+  #contact-form button {
+    flex: 1 1 100%;
+  }
+
+  .bloco {
+    flex-direction: column !important;
+  }
+}
+
+/* Botões de acessibilidade */
+.botoes-acessibilidade {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  z-index: 1100;
+}
+
+/* Botão VLibras */
+[vw] {
+  position: fixed !important;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+}
+
+/* Listas */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Iframe */
+iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 90%;
+  height: 400px;
+  border: 0;
+}
+
+section iframe + p {
+  text-align: center;
+  font-weight: bold;
+}
